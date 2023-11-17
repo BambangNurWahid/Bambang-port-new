@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding:
+    var(--scroll-padding, 5rem)
+}
+.hero{
+  width: 500px;
+  height: 500px;
+}
+.btn-sec {
+  background-color: #D9D9D9;
+}
+.btn-min{
+  border-radius: 5px;
+}
+.nav-link {
+      color: #9113F3;
+      -webkit-background-clip: text;
+      font-weight: bold;
+}
+/* Mengatur gaya untuk list container */
+    .list-container {
+      display: flex;
+      justify-content: space-between; /* Untuk membuat dua bagian menjadi sama rata */
+    }
+
+    /* Mengatur gaya untuk list di setiap bagian */
+    .list {
+      width: 700px; /* Memberikan sedikit ruang kosong untuk memastikan dua bagian tetap ada jarak */
+    }
+
+  .-mb5 {
+    color: #9747FF;
+  }
+  .sm a{
+  display: inline-flex;
+  text-decoration: none;
+  font-size: 19px;
+  width: 40px;
+  height: 40px;
+  color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 0 7px;
+}
+.sm a::before{
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  z-index: -1;
+  transition: transform .3s ease-in;
+}
+.sm a:nth-child(2)::before{
+  background: #38529a;
+}
+.sm a:nth-child(1)::before{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+}
+.sm a:nth-child(3)::before{
+  background: #8000FF;
+}
+.sm a:nth-child(4)::before{
+  background: #f70000;
+}
+.sm a:nth-child(5)::before{
+  background: #046596;
+}
+.sm a:hover::before{
+  transform: scale(0);
+}
+.sm a i{
+  transition: transform .3s ease-in;
+}
+.sm a:nth-child(2):hover i{
+  background: #38529a;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(1):hover i{
+  background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(3):hover i{
+  background: #8000FF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(4):hover i{
+  background: #f70000;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
+.sm a:nth-child(5):hover i{
+  background: #046596;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.5);
+}
